@@ -1,0 +1,47 @@
+Explication du Jeu
+
+Initialisation:
+pygame est initialisé pour jouer de la musique de fond.
+Configuration de la fenêtre et du canvas tkinter.
+
+Classe Tetris:
+Formes (Shapes): Définies comme une liste de listes représentant les pièces de Tetris.
+Méthode __init__: Initialise l'état du jeu, lie les touches, crée la première pièce et définit la boucle de jeu.
+Méthode bind_keys: Lie les touches du clavier aux contrôles du jeu (gauche, droite, bas, et rotation).
+Méthodes de mouvement des pièces (move_left, move_right, move_down, rotate_piece): Gère le mouvement et la rotation des pièces, en vérifiant les collisions.
+Méthode create_new_piece: Crée une nouvelle pièce de Tetris aléatoire; vérifie la condition de fin de jeu.
+Méthode run_game: Boucle de jeu principale pour mettre à jour l'état du jeu à un intervalle défini.
+Méthode check_collision: Vérifie si la pièce actuelle entre en collision avec les limites de la grille ou les pièces existantes.
+Méthode add_piece_to_grid: Ajoute la pièce actuelle à la grille lorsqu'elle est verrouillée en place.
+Méthode check_lines: Efface les lignes complètes et met à jour la grille.
+Méthode move_piece_down: Déplace la pièce actuelle vers le bas, vérifie les collisions et initie le verrouillage et la création de nouvelles pièces.
+Méthodes de dessin (draw_grid, draw_piece): Dessine la grille et la pièce actuelle sur le canvas.
+Méthode update: Met à jour l'état du jeu, y compris le déplacement des pièces et le dessin.
+Méthode show_game_over: Affiche le message "Game Over" lorsque le jeu se termine.
+
+
+Détails des Méthodes:
+
+Initialisation:
+pygame - La fenêtretkinter` et le canvas sont configurés pour afficher le jeu.
+
+Classe Tetris:
+Formes (Shapes): Une liste de listes où chaque sous-liste représente une forme de Tetris (I, O, T, L, J, S, Z).
+__init__: Cette méthode initialise l'état du jeu, lie les touches du clavier aux contrôles du jeu, crée la première pièce de Tetris, et initialise la boucle de jeu.
+bind_keys: Cette méthode associe les touches du clavier aux fonctions de contrôle du jeu (déplacement gauche, droite, bas et rotation des pièces).
+Méthodes de déplacement des pièces:
+move_left: Déplace la pièce actuelle vers la gauche.
+move_right: Déplace la pièce actuelle vers la droite.
+move_down: Accélère la chute de la pièce actuelle.
+rotate_piece: Fait pivoter la pièce actuelle.
+create_new_piece: Crée une nouvelle pièce de Tetris de manière aléatoire et vérifie si cela cause une condition de fin de jeu.
+run_game: La boucle de jeu principale qui met à jour l'état du jeu à intervalles réguliers.
+check_collision: Vérifie si la pièce actuelle entre en collision avec les bordures de la grille ou avec d'autres pièces déjà placées.
+add_piece_to_grid: Ajoute la pièce actuelle à la grille lorsqu'elle atteint le bas ou entre en collision avec d'autres pièces.
+check_lines: Vérifie les lignes complètes, les efface et met à jour la grille.
+move_piece_down: Déplace la pièce vers le bas, vérifie les collisions et ajoute la pièce à la grille si nécessaire puis crée une nouvelle pièce.
+Méthodes de dessin:
+draw_grid: Dessine la grille de jeu.
+draw_piece: Dessine la pièce de Tetris en cours de déplacement sur le canvas.
+update: Met à jour l'état du jeu, y compris le déplacement des pièces et le redessin de la grille et des pièces.
+show_game_over: Affiche le message "Game Over" lorsque le jeu se termine en raison d'une collision empêchant la génération d'une nouvelle pièce.
