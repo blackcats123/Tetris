@@ -40,6 +40,7 @@ check_collision: Vérifie si la pièce actuelle entre en collision avec les bord
 add_piece_to_grid: Ajoute la pièce actuelle à la grille lorsqu'elle atteint le bas ou entre en collision avec d'autres pièces.
 check_lines: Vérifie les lignes complètes, les efface et met à jour la grille.
 move_piece_down: Déplace la pièce vers le bas, vérifie les collisions et ajoute la pièce à la grille si nécessaire puis crée une nouvelle pièce.
+
 Méthodes de dessin:
 draw_grid: Dessine la grille de jeu.
 draw_piece: Dessine la pièce de Tetris en cours de déplacement sur le canvas.
