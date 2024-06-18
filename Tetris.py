@@ -4,7 +4,7 @@ import pygame
 
 # Initialiser la table de mixage dans pygame pour jouer de la musique de fond
 pygame.mixer.init()
-pygame.mixer.music.load("Desktop\pyton\\tetris.mp3")
+pygame.mixer.music.load("Desktop\python\\tetris.mp3")
 #pygame.mixer.music.load("tetris.mp3")
 pygame.mixer.music.play(-1)  # Joue la musique en boucle
 
