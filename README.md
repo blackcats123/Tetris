@@ -9,7 +9,7 @@ Pour exécuter ce jeu, vous devez avoir Python installé sur votre machine ainsi
 
 1. **Cloner ce dépôt:**
     ```bash
-    git clone https://github.com/yourusername/tetris-game.git
+    git clone https://github.com/blackcats123/Tetris.git
     cd tetris-game
     ```
 2. **Installer les bibliothèques requises:**
